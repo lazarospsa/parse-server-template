@@ -1,0 +1,12 @@
+<%- include('layout', {appData}) -%>
+
+<div class="container">
+  <h1>Welcome to my HTML Template</h1>
+  <p>Data from Parse Server: <span id="dynamicValue"></span></p>
+  <p>Data from Parse Server: <span id="number"></span></p>
+</div>
+
+<script>
+  document.getElementById('dynamicValue').textContent = '<%= dynamicValue %>';
+  document.getElementById('number').textContent = '<%= number %>';
+</script>

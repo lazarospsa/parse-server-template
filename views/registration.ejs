@@ -1,0 +1,11 @@
+<%- include('layout', {appData: appData}) -%>
+
+<div class="container">
+  <p>Data from Parse Server: <span id="email"></span></p>
+  <p>Data from Parse Server: <span id="password"></span></p>
+</div>
+
+<script>
+  document.getElementById('email').textContent = '<%= email %>';
+  document.getElementById('password').textContent = '<%= password %>';
+</script>
