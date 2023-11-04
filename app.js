@@ -23,7 +23,7 @@ const api = new ParseServer(parseServerOptions);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
-let appData = {"login":true, "appName": "Application"};
+let appData = {"login":false, "appName": "Application"};
 
 app.get('/', (req, res) => {
   const dynamicValue = 'This is a dynamic value from the server';
